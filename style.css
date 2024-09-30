@@ -1,0 +1,373 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+
+*{
+
+    font-family: "Poppins", sans-serif;
+  /*   margin: 0;
+    padding:0; */
+    box-sizing: border-box;
+    scroll-behavior:smooth ;
+
+}
+
+header 
+{
+ background-color: #f0f0f0;
+ width:100%;
+position :fixed;
+top: 0;
+z-index: 999;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 100px;
+
+}
+.navigation a
+{
+
+text-decoration: none;
+ color: #3d5aad;
+ text-transform: uppercase ;
+ font-weight: 500;
+ font-size: 1.1em;
+ padding-left: 20PX;
+  
+}
+.logo
+{
+ text-decoration: none;
+ color: #3d5aad;
+ text-transform: uppercase ;
+ font-weight: 700;
+ font-size: 1.8em;
+   
+}
+
+/* end of header */
+
+/* star of main */
+.navigation a:hover
+{
+color:#601fcf;
+
+}
+ 
+.my-image
+{
+     /* أو absolute حسب الحاجة */
+    top: 144px; /* المسافة من الأعلى */
+    left: 905px; /* المسافة من اليسار */
+    width: 600px; /* عرض الصورة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    box-sizing: content-box;
+    object-fit: cover;
+}
+.main{
+
+    padding: 100px 100px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #090b25;
+   
+    background: url(images/twotep.png) no-repeat  ;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+
+
+} 
+.main h2
+{
+    color: #ffff;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+.main h2 span{
+
+    color: #ffff;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3
+{
+    color: #ffff;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+.main-btn
+{
+
+    color: #ffff;
+    text-decoration: none;
+    background-color: hwb(208 10% 22% / 0.89);
+    size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: .9375em 2.1875em;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    transition: .5s ease;
+
+}
+
+.main-btn:hover
+{
+    background-color: #18239ce3;
+    size: 1.2em;
+   transform: scale(1.1);
+
+
+}
+.socialmedia a
+{
+    color: #ffff;
+    font-size:1.7em;
+    padding-right:30px;
+ 
+}
+/* end of main */
+
+
+/* star of skills */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* مسافة بين العناصر */
+    padding-bottom: 60px;
+    
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(20% - 20px); /* 25% عرض العنصر مع مراعاة المسافات */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s ease;
+   /*  box-shadow: 0 5px 25px rgba(1 1 1/7%);
+ */
+}
+
+.title{
+    text-align: center;
+    color: #3d5aad;
+    size: 2em;
+    margin: 50px;
+}
+.card:hover
+{
+
+    transform: scale(1.1);
+}
+.skills_sec{
+
+
+    padding-top: 50px;
+}
+
+/* end of skills */
+.SECTION3
+{
+   margin:top 30px; 
+ /* margin-bottom: 50px; */
+ 
+
+}
+.SECTION3 .container
+{
+    
+    background-color: #051D40;
+}
+
+.project-image img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    
+}
+.project-card
+{
+    background-color: #ffff;
+    margin: 20px;
+    padding: 20px;
+    border:  1px solid#ffff;
+    border-radius: 10px;
+    transition: .6s ease;
+    min-height: 10em;
+    width: 23em;
+  
+    
+
+}
+.project-card:hover
+{
+
+    transform: scale(1.1);
+}
+.project-card:hover.my-image
+{
+
+   opacity: .9;
+}
+.project-info
+{
+
+    padding: .8em;
+}
+.project-category
+{
+
+    padding: .8em;
+    color: #000;
+}
+.project-title
+{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+
+}
+.more_details
+{
+ text-decoration: none;
+}
+/* contact with me */
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    ;
+}
+.card_info
+{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+
+}
+.card_info:hover
+{
+
+    transform: scale(1.1);
+}
+
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #051D40;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .main{
+
+        background: url(images/CoppyBack.png) no-repeat  ;
+
+    
+    } 
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main h2{
+        font-size: 1em;
+    }
+
+    .main h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .navigation a{
+        padding-left: 5px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+    .navigation a{
+        padding-left: 5px;
+    }
+}
